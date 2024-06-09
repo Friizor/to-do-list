@@ -66,3 +66,122 @@ body {
     margin: 55px auto 0;
     display: block;
 }
+
+.todo {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b6a601;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px 12px;
+    border: 2px solid #e6b7eca1;
+    transition: all 0.2s ease;
+}
+
+.todo:first-child {
+    margin-top: 0;
+}
+
+.todo:last-child {
+    margin-bottom: 0;
+}
+
+.todo:hover {
+    background-color: #b6a601;
+}
+
+.todo label {
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+}
+
+.todo span {
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+span::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin-left: -30px;
+    border-radius: 100px;
+    border: 2px solid #b6a601;
+}
+
+input[type='checkbox'] {
+    visibility: hidden;
+}
+
+input:checked+span {
+    text-decoration: line-through
+}
+
+.todo:hover input:checked+span::before,
+input:checked+span::before {
+    background: url(./check.svg) 50% 50% no-repeat #09bb21;
+    border-color: #09bb21;
+}
+
+.todo:hover span::before {
+    border-color: #eee;
+}
+
+.todo .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #eee;
+    font-size: 24px;
+}
+
+.todos-container {
+    height: 300px;
+    overflow: overlay;
+}
+
+.todos-container::-webkit-scrollbar-track {
+    background: rgb(247, 247, 247);
+    border-radius: 20px
+}
+
+.todos-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.todos-container:hover::-webkit-scrollbar {
+    width: 7px;
+}
+
+.todos-container::-webkit-scrollbar-thumb {
+    background: #d5d5d5;
+    border-radius: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.filter {
+    color: #eee;
+    padding: 5px 15px;
+    border-radius: 100px;
+    border: 2px solid #b6a601;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.filter.active,
+.filter:hover {
+    background-color: #b6a601;
+}
