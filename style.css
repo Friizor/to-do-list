@@ -41,7 +41,7 @@ body {
     background-color: transparent;
     border: 2px solid #b6a601;
     border-radius: 30px;
-    color: #eee;
+    color: hsl(0, 0%, 0%);
     font-size: 16px;
     margin-right: 10px;
 }
@@ -99,7 +99,7 @@ body {
     align-items: center;
     font-family: 'Roboto', sans-serif;
     color: #eee;
-}
+}   
 
 .todo span {
     padding-left: 20px;
@@ -128,7 +128,7 @@ input:checked+span {
 .todo:hover input:checked+span::before,
 input:checked+span::before {
     background: url(check.svg) 50% 50% no-repeat #09bb21;
-    border-color: #09bb21;
+    border-color: #f6e100;
 }
 
 .todo:hover span::before {
