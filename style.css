@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 400px;
+    height: auto;
+    min-height: 400px;
+    padding: 30px;
+    background: transparent;
+    border: 2px solid #b6a601;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.todo-input {
+    flex: 1;
+    outline: none;
+    padding: 10px 10px 10px 20px;
+    background-color: transparent;
+    border: 2px solid #b6a601;
+    border-radius: 30px;
+    color: #eee;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.todo-input::placeholder {
+    color: hsl(0, 0%, 40%);
+}
+
+.add {
+    border: none;
+    outline: none;
+    background: #b6a601;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.empty-image {
+    margin: 55px auto 0;
+    display: block;
+}
