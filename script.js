@@ -7,3 +7,30 @@ const deleteAllButton = document.querySelector(".delete-all");
 const filters = document.querySelectorAll(".filter");
 let filter = '';
 
+showTodos();
+
+function getTodoHtml(todo, index) {
+  if (filter && filter != todo.status) {
+    return '';
+  }
+  let checked = todo.status == "completed" ? "checked" : "";
+  return /* html */ `
+    <li class="todo">
+      <label for="${index}">
+        <input id="${index}" onclick="updateStatus(this)" type="checkbox" ${checked}>
+        <span class="${checked}">${todo.name}</span>
+      </label>
+      <button class="delete-btn" data-index="${index}" onclick="remove(this)"><i class="fa fa-times"></i></button>
+    </li>
+  `; 
+}
+
+function showTodos() {
+  if (todosJson.length == 0) {
+    todosHtml.innerHTML = '';
+    emptyImage.style.display = 'block';
+  } else {
+    todosHtml.innerHTML = todosJson.map(getTodoHtml).join('');
+    emptyImage.style.display = 'none';
+  }
+}
