@@ -7,14 +7,12 @@
     </a><br>
     <img src="https://github.com/Friizor/to-do-list/assets/153310182/8bb79376-b7a1-4721-96ff-9e4e7c747495" height="350px" alt="Screenshot">
 </div>
-## JavaScript To-Do List: Enhance Your Workflow <br>
 
 This repository offers a user-friendly JavaScript implementation of a to-do list application. It provides a clean and intuitive interface to help you manage your tasks effectively, boosting your productivity.
 
 ### Features:
 
 * User-friendly interface for seamless task management
-* (Optional: Add `<li>` tags for specific features like persistence or customization)
     * Store your tasks persistently for peace of mind (if applicable)
     * Tailor the application to your needs (if applicable)
 
