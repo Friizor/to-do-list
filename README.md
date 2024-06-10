@@ -2,7 +2,7 @@
 <div class="bio">
   <h2>JavaScript To-Do List: Simple Task Management</h2>
 <div align="center">
-    <a href="https://friizor.github.io/to-so-list/" target="_blank">
+    <a href="https://friizor.github.io/to-do-list/" target="_blank">
         <img src="https://img.shields.io/badge/Demo-Link-brightgreen" alt="Demo Link">
     </a><br>
     <img src="https://github.com/Friizor/to-do-list/assets/153310182/8bb79376-b7a1-4721-96ff-9e4e7c747495" height="350px" alt="Screenshot">
